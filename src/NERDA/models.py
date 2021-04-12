@@ -222,7 +222,7 @@ class NERDA:
             loaded succesfully.
         """
         # TODO: change assert to Raise.
-        assert os.path.exists(model_path), "File does not exist. You can download network with download_network()"
+        #assert os.path.exists(model_path), "File does not exist. You can download network with download_network()"
         self.network.load_state_dict(torch.load(model_path, map_location = torch.device(self.device)))
         return f'Weights for network loaded from {model_path}'
 
