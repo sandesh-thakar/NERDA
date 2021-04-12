@@ -11,7 +11,7 @@ setuptools.setup(
     description="A Framework for Finetuning Transformers for Named-Entity Recognition",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ebanalyse/NERDA",
+    url="https://github.com/sandesh-thakar/NERDA",
     packages=setuptools.find_packages(where='src'),
     package_dir={'': 'src'},
     python_requires='>=3.6',
