@@ -94,6 +94,7 @@ class NERDADataSetReader():
         input_ids = input_ids + ([self.pad_token_id] * padding_len)
         masks = masks + ([0] * padding_len)  
         offsets = offsets + ([0] * padding_len)
+        offsets = offsets[:self.max_len]
         token_type_ids = token_type_ids + ([0] * padding_len)
         target_tags = target_tags + ([self.tag_outside_transformed] * padding_len)  
 
